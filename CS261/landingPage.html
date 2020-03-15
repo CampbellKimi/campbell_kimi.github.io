@@ -13,7 +13,7 @@
 
             xhttp.onload = function() {
                 var data = JSON.parse(this.response);
-                    
+                    console.log(data);
                 document.getElementById("lyrics").innerHTML = data.lyrics;
             };
             xhttp.open("GET", url, true);
