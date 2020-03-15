@@ -13,7 +13,7 @@
 
             xhttp.onload = function() {
                 var data = JSON.parse(this.response);
-                    console.log(data);
+                
                 document.getElementById("lyrics").innerHTML = data.lyrics;
             };
             xhttp.open("GET", url, true);
@@ -46,9 +46,9 @@
                 <p>Search for Song Lyrics:</p>
                 <div class = "form-group">
                     <label for="artist">Artist: </label>
-                    <input class="form-control" type="text" id = "artist" placeholder="Carly Rae Jepson"> 
+                    <input class="form-control" type="text" id = "artist" placeholder="Coldplay"> 
                     <label for="artist">Song Title: </label>
-                    <input class="form-control" type="text" id = "title" placeholder="Call Me Maybe">               
+                    <input class="form-control" type="text" id = "title" placeholder="Adventure of a Lifetime">               
                     <input type="submit" class="btn-success btn-small" onclick = "search()" value = "Search"/>
                 </div>
             </div>
